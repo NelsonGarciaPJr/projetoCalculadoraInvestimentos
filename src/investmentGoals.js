@@ -2,7 +2,7 @@ function convertToMonthlyReturnRate(yearlyReturnRate) {
   return yearlyReturnRate ** (1 / 12);
 }
 
-function generateReturnsArray(
+export function generateReturnsArray(
   startingAmount = 0,
   timeHorizon = 0,
   timePeriod = "monthly",
@@ -10,7 +10,7 @@ function generateReturnsArray(
   returnRate = 0,
   returnTimeFrame = "monthly"
 ) {
-  if (!timeHorizon || startingAmount) {
+  if (!timeHorizon || !startingAmount) {
     throw new Error(
       "Investiment inicial e prazo devem ser preenchidos com valores positivos."
     );
