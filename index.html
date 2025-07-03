@@ -15,7 +15,7 @@
       <h1 class="text-2xl font-bold px-6">Calculadora de Investimentos</h1>
       <form id="investment-form" class="w-full">
         <!-- Investimento inicial -->
-        <div class="flex w-full flex-col px-6 my-3">
+        <div class="flex w-full flex-col px-6 my-3 h-[4.5rem]">
           <label class="font-bold text-gray-700" for="starting-amount"
             >Investimento inicial</label
           >
@@ -39,7 +39,7 @@
         <!-- Investimento inicial - Final -->
 
         <!-- Aportes adicionais -->
-        <div class="flex w-full flex-col px-6 my-3">
+        <div class="flex w-full flex-col px-6 my-3 h-[4.5rem]">
           <label class="font-bold text-gray-700" for="additional-contribution"
             >Aportes adicionais</label
           >
@@ -62,7 +62,7 @@
         <!-- Aportes adicionais - Final -->
 
         <!-- Prazo -->
-        <div class="flex w-full flex-col px-6 my-3">
+        <div class="flex w-full flex-col px-6 my-3 h-[4.5rem]">
           <label class="font-bold text-gray-700" for="time-amount">Prazo</label>
           <div class="flex">
             <!-- <input
@@ -77,6 +77,7 @@
               placeholder="0"
               required
               id="time-amount"
+              name="time-amount"
             />
             <!-- <input class="w-1/3" type="text" value="mensal" /> -->
             <select
@@ -93,7 +94,7 @@
         <!-- Prazo - Final -->
 
         <!-- Rentabilidade -->
-        <div class="flex w-full flex-col px-6 my-3">
+        <div class="flex w-full flex-col px-6 my-3 h-[4.5rem]">
           <label class="font-bold text-gray-700" for="return-rate"
             >Rentabilidade</label
           >
@@ -127,7 +128,7 @@
         <!-- Rentabilidade - Final -->
         <!--  -->
         <!-- Impostos sobre lucro -->
-        <div class="flex w-full flex-col px-6 my-3">
+        <div class="flex w-full flex-col px-6 my-3 h-[4.5rem]">
           <label class="font-bold text-gray-700" for="tax-rate"
             >Impostos sobre lucro</label
           >
@@ -159,7 +160,9 @@
         >
           Calcular
         </button>
-        <button class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
+        <button id="clear-form" class="w-1/2 rounded-lg hover:bg-emerald-500">
+          Limpar
+        </button>
       </div>
     </aside>
     <main><p>Resultados</p></main>
